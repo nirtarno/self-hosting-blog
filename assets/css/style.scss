@@ -1,0 +1,34 @@
+@import "{{ site.theme }}";
+
+/* Sticky footer */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Blog readability */
+.post-preview {
+  max-width: 720px;
+  margin: 2rem auto;
+}
+
+.post-title a {
+  text-decoration: none;
+}
+
+.post-excerpt {
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+.read-more a {
+  font-weight: 600;
+}

@@ -1,5 +1,22 @@
-title: Self Hosting
-description: Thoughts, notes, and experiments
+# Site identity
+title: My Blog
+description: Notes, thoughts, and experiments
+
+# GitHub Pages / Jekyll
 theme: jekyll-theme-cayman
 markdown: kramdown
+
+# URL handling (CRITICAL)
+url: "https://nirtarno.github.io/"
+baseurl: "self-hosting-blog" # "" if repo is USERNAME.github.io, "/repo-name" otherwise
+
+# Blog behavior
 excerpt_separator: "<!--more-->"
+
+# Disable GitHub footer junk
+show_downloads: false
+repository: null
+
+# Build settings
+plugins:
+  - jekyll-feed
