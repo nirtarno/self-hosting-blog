@@ -1,1 +1,4 @@
-theme: jekyll-theme-minimal
+title: My Blog
+description: Thoughts, notes, and experiments
+theme: minima
+markdown: kramdown
