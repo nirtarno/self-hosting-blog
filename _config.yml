@@ -1,22 +1,31 @@
-# Site identity
-title: My Blog
-description: Notes, thoughts, and experiments
-
-# GitHub Pages / Jekyll
-theme: jekyll-theme-cayman
-markdown: kramdown
-
-# URL handling (CRITICAL)
+# Site settings
+title: Your Blog Title
+description: A personal blog about technology, life, and everything in between
+author: Your Name
+email: your.email@example.com
 url: "https://nirtarno.github.io/"
-baseurl: "self-hosting-blog" # "" if repo is USERNAME.github.io, "/repo-name" otherwise
-
-# Blog behavior
-excerpt_separator: "<!--more-->"
-
-# Disable GitHub footer junk
-show_downloads: false
-repository: null
+baseurl: "self-hosting-blog"
 
 # Build settings
-plugins:
-  - jekyll-feed
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
