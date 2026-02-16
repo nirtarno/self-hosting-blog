@@ -2,9 +2,9 @@
 layout: post
 title: "Welcome to My Blog"
 date: 2024-02-14 10:00:00 -0000
-author: Your Name
+author: Nir Tarnopolski
 tags: [welcome, introduction]
-image: /assets/images/welcome.jpg
+image: /assets/images/hello_world.png
 ---
 
 Welcome to my new blog! This is my first post, and I'm excited to share my thoughts and experiences with you.

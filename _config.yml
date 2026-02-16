@@ -1,8 +1,8 @@
 # Site settings
-title: Your Blog Title
-description: A personal blog about technology, life, and everything in between
-author: Your Name
-email: your.email@example.com
+title: CheapBytes.dev
+description: A personal blog about technology, self-hosting, life and everything in between
+author: Nir Tarnopolski
+email: nirtarno@gmail.com
 url: "https://nirtarno.github.io/"
 baseurl: "self-hosting-blog"
 
