@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building a Modern Web Application"
-date: 2024-02-10 14:30:00 -0000
+date: 2026-02-10 14:30:00 -0000
 author: Your Name
 tags: [web development, tutorial, javascript]
 image: /assets/images/web-dev.jpg
