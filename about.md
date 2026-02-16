@@ -1,13 +1,9 @@
 ---
-layout: default
+layout: post
 title: About
 permalink: /about/
 image: /assets/images/hello_world1.png
 ---
-
-<div class="page-content">
-    <img src="{{ image | relative_url }}" alt="{{ title }}">
-</div>
 
 Welcome to my new blog! This is my first post, and I'm excited to share my thoughts and experiences with you.
 
