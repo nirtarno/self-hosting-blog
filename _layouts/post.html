@@ -33,19 +33,19 @@ layout: default
     </div>
 
     <footer class="post-footer">
-        <div class="post-navigation">
+        <nav aria-label="Post Navigation" class="post-navigation">
             {% if page.previous.url %}
-            <a href="{{ page.previous.url | relative_url }}" class="post-nav-link post-nav-prev">
+            <a href="{{ page.previous.url | relative_url }}" rel="prev" class="post-nav-link post-nav-prev">
                 <span class="post-nav-label">← Previous</span>
                 <span class="post-nav-title">{{ page.previous.title }}</span>
             </a>
             {% endif %}
             {% if page.next.url %}
-            <a href="{{ page.next.url | relative_url }}" class="post-nav-link post-nav-next">
+            <a href="{{ page.next.url | relative_url }}" rel="next" class="post-nav-link post-nav-next">
                 <span class="post-nav-label">Next →</span>
                 <span class="post-nav-title">{{ page.next.title }}</span>
             </a>
             {% endif %}
-        </div>
+        </nav>
     </footer>
 </article>

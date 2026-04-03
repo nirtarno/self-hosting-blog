@@ -9,20 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <nav class="nav">
         <div class="nav-container">
             <a href="{{ '/' | relative_url }}" class="nav-logo">{{ site.title }}</a>
-            <div class="nav-links">
-                <a href="{{ '/' | relative_url }}">Home</a>
-                <a href="{{ '/archive' | relative_url }}">Archive</a>
-                <a href="{{ '/about' | relative_url }}">About Me</a>
-            </div>
+            <ul class="nav-links">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/archive' | relative_url }}">Archive</a></li>
+                <li><a href="{{ '/about' | relative_url }}">About Me</a></li>
+            </ul>
         </div>
     </nav>
 
-    <main class="main">
+    <main id="main" class="main">
         {{ content }}
     </main>
 
